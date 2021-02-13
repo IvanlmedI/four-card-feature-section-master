@@ -1,0 +1,154 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Poppins" sans-serif;
+}
+
+header {
+  margin: 50px auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 200;
+  margin: 0;
+}
+
+h1 span {
+  font-weight: 600;
+}
+
+p {
+  color: hsl(229, 6%, 66%);
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1240px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 30px;
+  margin: 15px;
+  width: 350px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.01);
+  border-radius: 5px;
+}
+
+.cyan {
+  border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+.red {
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+.orange {
+  border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+.blue {
+  border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+.card-push {
+  transform: translateY(50%);
+}
+
+.card h2 {
+  margin: 0;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 15px 0 40px;
+}
+
+.card img {
+  display: block;
+  margin-left: auto;
+}
+
+@media (max-width: 400px) {
+  .box-push {
+    transform: translateY(0);
+  }
+}
